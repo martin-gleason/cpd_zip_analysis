@@ -1,0 +1,20 @@
+---
+title: "Zipcode and CPD Analysis"
+author: "Martin Gleason, MS"
+date: "1/27/2020"
+output: html_document
+---
+
+This text will be removed in the next revision
+
+```{r setup, include=TRUE, warning = FALSE, message = FALSE, echo = FALSE}
+library("tidyverse")
+library("here")
+
+source(here("scripts/load_shapes.R"))
+
+```
+
+```{r map, include=TRUE, warning = FALSE, message = FALSE, echo = FALSE}
+cc_cpd_zip
+```
