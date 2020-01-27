@@ -1,0 +1,341 @@
+{
+  "currentVersion" : 10.7, 
+  "id" : 0, 
+  "name" : "Zip_Codes_in_Cook_County", 
+  "type" : "Feature Layer", 
+  "serviceItemId" : "18f31fd6fe3a486aa6aabbf80f1a4cf6", 
+  "displayField" : "", 
+  "description" : "", 
+  "copyrightText" : "", 
+  "defaultVisibility" : true, 
+  "editingInfo" : {
+    "lastEditDate" : 1574429400711
+  }, 
+  "relationships" : [], 
+  "isDataVersioned" : false, 
+  "supportsAppend" : true, 
+  "supportsCalculate" : true, 
+  "supportsASyncCalculate" : true, 
+  "supportsTruncate" : true, 
+  "supportsAttachmentsByUploadId" : true, 
+  "supportsAttachmentsResizing" : true, 
+  "supportsRollbackOnFailureParameter" : true, 
+  "supportsStatistics" : true, 
+  "supportsExceedsLimitStatistics" : true, 
+  "supportsAdvancedQueries" : true, 
+  "supportsValidateSql" : true, 
+  "supportsCoordinatesQuantization" : true, 
+  "supportsFieldDescriptionProperty" : true, 
+  "supportsQuantizationEditMode" : true, 
+  "supportsApplyEditsWithGlobalIds" : false, 
+  "supportsMultiScaleGeometry" : true, 
+  "supportsReturningQueryGeometry" : true, 
+  "hasGeometryProperties" : true, 
+  "geometryProperties" : 
+  {
+    "shapeAreaFieldName" : "Shape__Area", 
+    "shapeLengthFieldName" : "Shape__Length", 
+    "units" : "esriMeters"
+  }, 
+  "advancedQueryCapabilities" : {
+    "supportsPagination" : true, 
+    "supportsPaginationOnAggregatedQueries" : true, 
+    "supportsQueryRelatedPagination" : true, 
+    "supportsQueryWithDistance" : true, 
+    "supportsReturningQueryExtent" : true, 
+    "supportsStatistics" : true, 
+    "supportsOrderBy" : true, 
+    "supportsDistinct" : true, 
+    "supportsQueryWithResultType" : true, 
+    "supportsSqlExpression" : true, 
+    "supportsAdvancedQueryRelated" : true, 
+    "supportsCountDistinct" : true, 
+    "supportsPercentileStatistics" : true, 
+    "supportsLod" : true, 
+    "supportsQueryWithLodSR" : false, 
+    "supportedLodTypes" : [
+      "geohash"
+    ], 
+    "supportsReturningGeometryCentroid" : true, 
+    "supportsReturningGeometryProperties" : true, 
+    "supportsQueryWithDatumTransformation" : true, 
+    "supportsHavingClause" : true, 
+    "supportsOutFieldSQLExpression" : true, 
+    "supportsMaxRecordCountFactor" : true, 
+    "supportsTopFeaturesQuery" : true, 
+    "supportsDisjointSpatialRel" : true, 
+    "supportsQueryWithCacheHint" : true
+  }, 
+  "useStandardizedQueries" : true, 
+  "geometryType" : "esriGeometryPolygon", 
+  "minScale" : 16884070, 
+  "maxScale" : 0, 
+  "extent" : {
+    "xmin" : -9825463.5454595368, 
+    "ymin" : 5081841.5406687567, 
+    "xmax" : -9743178.4948675241, 
+    "ymax" : 5184115.0469652722, 
+    "spatialReference" : {
+      "wkid" : 102100, 
+      "latestWkid" : 3857
+    }
+  }, 
+  "drawingInfo":{"renderer":{"type":"simple","symbol":{"color":null,"outline":{"color":[0,0,0,255],"width":0.75,"type":"esriSLS","style":"esriSLSSolid"},"type":"esriSFS","style":"esriSFSSolid"}},"transparency":0}, 
+  "allowGeometryUpdates" : true, 
+  "hasAttachments" : false, 
+  "htmlPopupType" : "esriServerHTMLPopupTypeNone", 
+  "hasMetadata" : true, 
+  "hasM" : false, 
+  "hasZ" : false, 
+  "objectIdField" : "FID", 
+  "uniqueIdField" : 
+  {
+    "name" : "FID", 
+    "isSystemMaintained" : true
+  }, 
+  "globalIdField" : "", 
+  "typeIdField" : "", 
+  "fields" : [
+    {
+      "name" : "FID", 
+      "type" : "esriFieldTypeOID", 
+      "actualType" : "int", 
+      "alias" : "FID", 
+      "sqlType" : "sqlTypeInteger", 
+      "nullable" : false, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "OBJECTID", 
+      "type" : "esriFieldTypeInteger", 
+      "actualType" : "int", 
+      "alias" : "OBJECTID", 
+      "sqlType" : "sqlTypeInteger", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ZCTA5CE10", 
+      "type" : "esriFieldTypeString", 
+      "actualType" : "nvarchar", 
+      "alias" : "ZCTA5CE10", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 5, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "GEOID10", 
+      "type" : "esriFieldTypeString", 
+      "actualType" : "nvarchar", 
+      "alias" : "GEOID10", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 5, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "CLASSFP10", 
+      "type" : "esriFieldTypeString", 
+      "actualType" : "nvarchar", 
+      "alias" : "CLASSFP10", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 2, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "MTFCC10", 
+      "type" : "esriFieldTypeString", 
+      "actualType" : "nvarchar", 
+      "alias" : "MTFCC10", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 5, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "FUNCSTAT10", 
+      "type" : "esriFieldTypeString", 
+      "actualType" : "nvarchar", 
+      "alias" : "FUNCSTAT10", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 1, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ALAND10", 
+      "type" : "esriFieldTypeDouble", 
+      "actualType" : "float", 
+      "alias" : "ALAND10", 
+      "sqlType" : "sqlTypeFloat", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "AWATER10", 
+      "type" : "esriFieldTypeDouble", 
+      "actualType" : "float", 
+      "alias" : "AWATER10", 
+      "sqlType" : "sqlTypeFloat", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "INTPTLAT10", 
+      "type" : "esriFieldTypeString", 
+      "actualType" : "nvarchar", 
+      "alias" : "INTPTLAT10", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 11, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "INTPTLON10", 
+      "type" : "esriFieldTypeString", 
+      "actualType" : "nvarchar", 
+      "alias" : "INTPTLON10", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 12, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Shape_Leng", 
+      "type" : "esriFieldTypeDouble", 
+      "actualType" : "float", 
+      "alias" : "Shape_Leng", 
+      "sqlType" : "sqlTypeFloat", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Shape_Area", 
+      "type" : "esriFieldTypeDouble", 
+      "actualType" : "float", 
+      "alias" : "Shape_Area", 
+      "sqlType" : "sqlTypeFloat", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Shape__Area", 
+      "type" : "esriFieldTypeDouble", 
+      "actualType" : "float", 
+      "alias" : "Shape__Area", 
+      "sqlType" : "sqlTypeFloat", 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Shape__Length", 
+      "type" : "esriFieldTypeDouble", 
+      "actualType" : "float", 
+      "alias" : "Shape__Length", 
+      "sqlType" : "sqlTypeFloat", 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }
+  ], 
+  "indexes" : [
+    {
+      "name" : "Shape__Area_Index", 
+      "fields" : "Shape__Area", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : ""
+    }, 
+    {
+      "name" : "Shape__Length_Index", 
+      "fields" : "Shape__Length", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : ""
+    }, 
+    {
+      "name" : "PK__ZIP_CODE__C1BEA5A25368A263", 
+      "fields" : "FID", 
+      "isAscending" : true, 
+      "isUnique" : true, 
+      "description" : "clustered, unique, primary key"
+    }, 
+    {
+      "name" : "user_51288.ZIP_CODES_IN_COOK_COUNTY_ZIP_CODES_IN_COOK_COUNTY_Shape_sidx", 
+      "fields" : "Shape", 
+      "isAscending" : false, 
+      "isUnique" : false, 
+      "description" : "Shape Index"
+    }, 
+    {
+      "name" : "ZCTA5CE10_Index", 
+      "fields" : "ZCTA5CE10", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "ZCTA5CE10_Index"
+    }
+  ], 
+  "types" : [], 
+  "templates" : [
+    {
+      "name" : "New Feature", 
+      "description" : "", 
+      "drawingTool" : "esriFeatureEditToolNone", 
+      "prototype" : {
+        "attributes" : {
+          "OBJECTID" : null, 
+          "ZCTA5CE10" : null, 
+          "GEOID10" : null, 
+          "CLASSFP10" : null, 
+          "MTFCC10" : null, 
+          "FUNCSTAT10" : null, 
+          "ALAND10" : null, 
+          "AWATER10" : null, 
+          "INTPTLAT10" : null, 
+          "INTPTLON10" : null, 
+          "Shape_Leng" : null, 
+          "Shape_Area" : null
+        }
+      }
+    }
+  ], 
+  "supportedQueryFormats" : "JSON, geoJSON, PBF", 
+  "hasStaticData" : true, 
+  "maxRecordCount" : 2000, 
+  "standardMaxRecordCount" : 4000, 
+  "standardMaxRecordCountNoGeometry" : 32000, 
+  "tileMaxRecordCount" : 4000, 
+  "maxRecordCountFactor" : 1, 
+  "capabilities" : "Query"
+}
