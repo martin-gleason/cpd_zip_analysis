@@ -5,11 +5,24 @@ date: "1/27/2020"
 output: html_document
 ---
 
-This text will be removed in the next revision
+## Summary of ask:
+The following questions are guiding this GIS analysis:
 
-```{r setup, include=TRUE, warning = FALSE, message = FALSE, echo = FALSE}
+* Which Chicago Police Department Districts and Cook County zipcodes intersect? 
+* How many zipcodes are in each particular CPD district? 
+* How does this zipcode interaction impact case assignment by zipcode?
+
+## Method
+The first step was to create a map of Cook County zipcodes, and overlay this feature with the [CPD district shapefile.](https://data.cityofchicago.org/Public-Safety/CPD-districts/7hhi-ktqw) This file is part of the [Chicago Data Portal](https://data.cityofchicago.org) and can be used with a variety of GIS products. Zipcode integration was a bit more difficult.
+
+The first issue is technical -- [Zipcodes are not polygons, but linear features.](http://www.georeference.org/doc/zip_codes_are_not_areas.htm) Zipcodes represent postal routes, and may include neighborhoods, buildings, or even US Navy ships. While zipcodes are frequently used in stastical models and maps, these zipcodes are frequently derrived from [Zipcode Tabulation Areas.](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html)
+
+### Leaflet Map of Cook County Zipcodes and Chicago Police Districts
+
+```{r setup, include=FALSE, error = FALSE, warning = FALSE, message = FALSE, echo = FALSE}
 library("tidyverse")
 library("here")
+library(kableExtra)
 
 source(here("scripts/load_shapes.R"))
 
@@ -18,3 +31,5 @@ source(here("scripts/load_shapes.R"))
 ```{r map, include=TRUE, warning = FALSE, message = FALSE, echo = FALSE}
 cc_cpd_zip
 ```
+
+## 
