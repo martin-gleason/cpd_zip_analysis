@@ -15,7 +15,11 @@ The following questions are guiding this GIS analysis:
 ## Method
 The first step was to create a map of Cook County zipcodes, and overlay this feature with the [CPD district shapefile.](https://data.cityofchicago.org/Public-Safety/CPD-districts/7hhi-ktqw) This file is part of the [Chicago Data Portal](https://data.cityofchicago.org) and can be used with a variety of GIS products. Zipcode integration was a bit more difficult.
 
-The first issue is technical -- [Zipcodes are not polygons, but linear features.](http://www.georeference.org/doc/zip_codes_are_not_areas.htm) Zipcodes represent postal routes, and may include neighborhoods, buildings, or even US Navy ships. While zipcodes are frequently used in stastical models and maps, these zipcodes are frequently derrived from [Zipcode Tabulation Areas.](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html)
+The first issue seems to be a distinction without a difference: [Zipcodes are not polygons, but linear features.](http://www.georeference.org/doc/zip_codes_are_not_areas.htm) Zipcodes represent postal routes, and may include neighborhoods, buildings, or even US Navy ships. While zipcodes are frequently used in stastical models and maps, these zipcodes are frequently derrived from [Zipcode Tabulation Areas.](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html), which are maintained not by the USPS, but by the US Census Bureau. ZCATS are not 1:1 representation of Zipcodes, and may vary as much as 20% with regard to areas covered. This distinction may impact upto 3 zipcodes, which in turn could impact the assignment of dozens, if not hundreds, of cases.
+
+The second issue was more technical: How to get the zipcode shapefiles. Pitney/Bowes sells a GIS solution for $399/year. Their product does not depend on the user knowing GIS data, and is regularly updated. The US Census Buear offers TIGER/Line files as part of their open data project. TIGER/Line files are large, and require additional filtering to get to specific geographic locales. Cook County GIS does have a ZCTAS based layer in ArcGIS; however, at present my access to running analysis is limited. 
+
+
 
 ### Leaflet Map of Cook County Zipcodes and Chicago Police Districts
 
