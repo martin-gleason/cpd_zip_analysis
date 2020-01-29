@@ -1,0 +1,1383 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "z8bn-74gv",
+      "name" : "Police Stations",
+      "attribution" : "Chicago Police Department",
+      "attributionLink" : "http://www.chicagopolice.org/",
+      "averageRating" : 0,
+      "category" : "Public Safety",
+      "createdAt" : 1293052023,
+      "description" : "Chicago Police district station locations and contact information.",
+      "displayType" : "table",
+      "downloadCount" : 12145,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1465573607,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 21567980,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1465571628,
+      "publicationGroup" : 220749,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1465571571,
+      "rowsUpdatedBy" : "3qqc-w7ag",
+      "tableId" : 11248224,
+      "totalTimesRated" : 0,
+      "viewCount" : 252765,
+      "viewLastModified" : 1465571628,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1465571628,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 945096,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1465571628,
+        "workflowId" : 2226,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "failureCount" : 0,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "scy9-9wg4",
+          "displayName" : "cocadmin"
+        }
+      } ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 258504052,
+        "name" : "DISTRICT",
+        "dataTypeName" : "text",
+        "fieldName" : "district",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1428202,
+        "width" : 83,
+        "cachedContents" : {
+          "non_null" : 23,
+          "largest" : "Headquarters",
+          "null" : "0",
+          "top" : [ {
+            "item" : "1",
+            "count" : "1"
+          }, {
+            "item" : "10",
+            "count" : "1"
+          }, {
+            "item" : "11",
+            "count" : "1"
+          }, {
+            "item" : "12",
+            "count" : "1"
+          }, {
+            "item" : "14",
+            "count" : "1"
+          }, {
+            "item" : "15",
+            "count" : "1"
+          }, {
+            "item" : "16",
+            "count" : "1"
+          }, {
+            "item" : "17",
+            "count" : "1"
+          }, {
+            "item" : "18",
+            "count" : "1"
+          }, {
+            "item" : "19",
+            "count" : "1"
+          }, {
+            "item" : "2",
+            "count" : "1"
+          }, {
+            "item" : "20",
+            "count" : "1"
+          }, {
+            "item" : "22",
+            "count" : "1"
+          }, {
+            "item" : "24",
+            "count" : "1"
+          }, {
+            "item" : "25",
+            "count" : "1"
+          }, {
+            "item" : "3",
+            "count" : "1"
+          }, {
+            "item" : "4",
+            "count" : "1"
+          }, {
+            "item" : "5",
+            "count" : "1"
+          }, {
+            "item" : "6",
+            "count" : "1"
+          }, {
+            "item" : "7",
+            "count" : "1"
+          } ],
+          "smallest" : "1",
+          "not_null" : "23",
+          "cardinality" : "23"
+        },
+        "format" : {
+          "align" : "right"
+        }
+      }, {
+        "id" : 258504053,
+        "name" : "DISTRICT NAME",
+        "dataTypeName" : "text",
+        "fieldName" : "district_name",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35888836,
+        "width" : 198,
+        "cachedContents" : {
+          "non_null" : 23,
+          "largest" : "Wentworth",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Albany Park",
+            "count" : "1"
+          }, {
+            "item" : "Austin",
+            "count" : "1"
+          }, {
+            "item" : "Calumet",
+            "count" : "1"
+          }, {
+            "item" : "Central",
+            "count" : "1"
+          }, {
+            "item" : "Chicago Lawn",
+            "count" : "1"
+          }, {
+            "item" : "Deering",
+            "count" : "1"
+          }, {
+            "item" : "Englewood",
+            "count" : "1"
+          }, {
+            "item" : "Grand Central",
+            "count" : "1"
+          }, {
+            "item" : "Grand Crossing",
+            "count" : "1"
+          }, {
+            "item" : "Gresham",
+            "count" : "1"
+          }, {
+            "item" : "Harrison",
+            "count" : "1"
+          }, {
+            "item" : "Headquarters",
+            "count" : "1"
+          }, {
+            "item" : "Jefferson Park",
+            "count" : "1"
+          }, {
+            "item" : "Lincoln",
+            "count" : "1"
+          }, {
+            "item" : "Morgan Park",
+            "count" : "1"
+          }, {
+            "item" : "Near North",
+            "count" : "1"
+          }, {
+            "item" : "Near West",
+            "count" : "1"
+          }, {
+            "item" : "Ogden",
+            "count" : "1"
+          }, {
+            "item" : "Rogers Park",
+            "count" : "1"
+          }, {
+            "item" : "Shakespeare",
+            "count" : "1"
+          } ],
+          "smallest" : "Albany Park",
+          "not_null" : "23",
+          "cardinality" : "23"
+        },
+        "format" : { }
+      }, {
+        "id" : 258504054,
+        "name" : "ADDRESS",
+        "dataTypeName" : "text",
+        "fieldName" : "address",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1424829,
+        "width" : 140,
+        "cachedContents" : {
+          "non_null" : 23,
+          "largest" : "850 W Addison St",
+          "null" : "0",
+          "top" : [ {
+            "item" : "1160 N Larrabee St",
+            "count" : "1"
+          }, {
+            "item" : "1412 S Blue Island Ave\n",
+            "count" : "1"
+          }, {
+            "item" : "1438 W 63rd St",
+            "count" : "1"
+          }, {
+            "item" : "1718 S State St",
+            "count" : "1"
+          }, {
+            "item" : "1900 W Monterey Ave",
+            "count" : "1"
+          }, {
+            "item" : "2150 N California Ave",
+            "count" : "1"
+          }, {
+            "item" : "2255 E 103rd St",
+            "count" : "1"
+          }, {
+            "item" : "3120 S Halsted St",
+            "count" : "1"
+          }, {
+            "item" : "3151 W Harrison St",
+            "count" : "1"
+          }, {
+            "item" : "3315 W Ogden Ave",
+            "count" : "1"
+          }, {
+            "item" : "3420 W 63rd St",
+            "count" : "1"
+          }, {
+            "item" : "3510 S Michigan Ave",
+            "count" : "1"
+          }, {
+            "item" : "4650 N Pulaski Rd",
+            "count" : "1"
+          }, {
+            "item" : "5101 S Wentworth Ave",
+            "count" : "1"
+          }, {
+            "item" : "5151 N Milwaukee Ave",
+            "count" : "1"
+          }, {
+            "item" : "5400 N Lincoln Ave",
+            "count" : "1"
+          }, {
+            "item" : "5555 W Grand Ave",
+            "count" : "1"
+          }, {
+            "item" : "5701 W Madison St",
+            "count" : "1"
+          }, {
+            "item" : "6464 N Clark St",
+            "count" : "1"
+          }, {
+            "item" : "7040 S Cottage Grove Ave",
+            "count" : "1"
+          } ],
+          "smallest" : "1160 N Larrabee St",
+          "not_null" : "23",
+          "cardinality" : "23"
+        },
+        "format" : { }
+      }, {
+        "id" : 258504055,
+        "name" : "CITY",
+        "dataTypeName" : "text",
+        "fieldName" : "city",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1424830,
+        "width" : 52,
+        "cachedContents" : {
+          "non_null" : 23,
+          "largest" : "Chicago",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Chicago",
+            "count" : "23"
+          } ],
+          "smallest" : "Chicago",
+          "not_null" : "23",
+          "cardinality" : "1"
+        },
+        "format" : { }
+      }, {
+        "id" : 258504056,
+        "name" : "STATE",
+        "dataTypeName" : "text",
+        "fieldName" : "state",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1424831,
+        "width" : 50,
+        "cachedContents" : {
+          "non_null" : 23,
+          "largest" : "IL",
+          "null" : "0",
+          "top" : [ {
+            "item" : "IL",
+            "count" : "23"
+          } ],
+          "smallest" : "IL",
+          "not_null" : "23",
+          "cardinality" : "1"
+        },
+        "format" : { }
+      }, {
+        "id" : 258504057,
+        "name" : "ZIP",
+        "dataTypeName" : "text",
+        "fieldName" : "zip",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1424834,
+        "width" : 50,
+        "cachedContents" : {
+          "non_null" : 23,
+          "largest" : "60653",
+          "null" : "0",
+          "top" : [ {
+            "item" : "60630",
+            "count" : "2"
+          }, {
+            "item" : "60608",
+            "count" : "2"
+          }, {
+            "item" : "60623",
+            "count" : "1"
+          }, {
+            "item" : "60653",
+            "count" : "1"
+          }, {
+            "item" : "60647",
+            "count" : "1"
+          }, {
+            "item" : "60628",
+            "count" : "1"
+          }, {
+            "item" : "60613",
+            "count" : "1"
+          }, {
+            "item" : "60625",
+            "count" : "1"
+          }, {
+            "item" : "60626",
+            "count" : "1"
+          }, {
+            "item" : "60643",
+            "count" : "1"
+          }, {
+            "item" : "60637",
+            "count" : "1"
+          }, {
+            "item" : "60610",
+            "count" : "1"
+          }, {
+            "item" : "60609",
+            "count" : "1"
+          }, {
+            "item" : "60620",
+            "count" : "1"
+          }, {
+            "item" : "60612",
+            "count" : "1"
+          }, {
+            "item" : "60617",
+            "count" : "1"
+          }, {
+            "item" : "60616",
+            "count" : "1"
+          }, {
+            "item" : "60644",
+            "count" : "1"
+          }, {
+            "item" : "60636",
+            "count" : "1"
+          }, {
+            "item" : "60629",
+            "count" : "1"
+          } ],
+          "smallest" : "60608",
+          "not_null" : "23",
+          "cardinality" : "21"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "align" : "right"
+        }
+      }, {
+        "id" : 258504058,
+        "name" : "WEBSITE",
+        "dataTypeName" : "url",
+        "fieldName" : "website",
+        "position" : 7,
+        "renderTypeName" : "url",
+        "tableColumnId" : 1428190,
+        "width" : 464,
+        "cachedContents" : {
+          "non_null" : 23,
+          "largest" : {
+            "url" : "http://home.chicagopolice.org/community/districts/9th-district-deering/"
+          },
+          "null" : 0,
+          "top" : [ {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/1st-district-central/"
+            },
+            "count" : 20
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/2nd-district-wentworth/"
+            },
+            "count" : 19
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/3rd-district-grand-crossing/"
+            },
+            "count" : 18
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/4th-district-south-chicago/"
+            },
+            "count" : 17
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/5th-district-calumet/"
+            },
+            "count" : 16
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/6th-district-gresham/"
+            },
+            "count" : 15
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/7th-district-englewood/"
+            },
+            "count" : 14
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/8th-district-chicago-lawn/"
+            },
+            "count" : 13
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/9th-district-deering/"
+            },
+            "count" : 12
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/10th-district-ogden/"
+            },
+            "count" : 11
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/11th-district-harrison/"
+            },
+            "count" : 10
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/12th-district-near-west/"
+            },
+            "count" : 9
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/14th-district-shakespeare/"
+            },
+            "count" : 8
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/15th-district-austin/"
+            },
+            "count" : 7
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/16th-district-jefferson-park/"
+            },
+            "count" : 6
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/17th-district-albany-park/"
+            },
+            "count" : 5
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/18th-district-near-north/"
+            },
+            "count" : 4
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/19th-district-town-hall/"
+            },
+            "count" : 3
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/20th-district-lincoln/"
+            },
+            "count" : 2
+          }, {
+            "item" : {
+              "url" : "http://home.chicagopolice.org/community/districts/22nd-district-morgan-park/"
+            },
+            "count" : 1
+          } ],
+          "smallest" : {
+            "url" : "http://home.chicagopolice.org"
+          }
+        },
+        "format" : { },
+        "subColumnTypes" : [ "url", "description" ]
+      }, {
+        "id" : 258504059,
+        "name" : "PHONE",
+        "dataTypeName" : "text",
+        "fieldName" : "phone",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1428240,
+        "width" : 177,
+        "cachedContents" : {
+          "non_null" : 22,
+          "largest" : "312-747-8730",
+          "null" : "1",
+          "top" : [ {
+            "item" : "312-742-4410",
+            "count" : "1"
+          }, {
+            "item" : "312-742-4480",
+            "count" : "1"
+          }, {
+            "item" : "312-742-5870",
+            "count" : "1"
+          }, {
+            "item" : "312-742-8714",
+            "count" : "1"
+          }, {
+            "item" : "312-743-1440",
+            "count" : "1"
+          }, {
+            "item" : "312-744-5907",
+            "count" : "1"
+          }, {
+            "item" : "312-744-8250",
+            "count" : "1"
+          }, {
+            "item" : "312-744-8320",
+            "count" : "1"
+          }, {
+            "item" : "312-745-0710",
+            "count" : "1"
+          }, {
+            "item" : "312-745-3617",
+            "count" : "1"
+          }, {
+            "item" : "312-745-4290",
+            "count" : "1"
+          }, {
+            "item" : "312-746-8386",
+            "count" : "1"
+          }, {
+            "item" : "312-746-8396",
+            "count" : "1"
+          }, {
+            "item" : "312-746-8605",
+            "count" : "1"
+          }, {
+            "item" : "312-747-7511",
+            "count" : "1"
+          }, {
+            "item" : "312-747-7581",
+            "count" : "1"
+          }, {
+            "item" : "312-747-8201",
+            "count" : "1"
+          }, {
+            "item" : "312-747-8210",
+            "count" : "1"
+          }, {
+            "item" : "312-747-8223",
+            "count" : "1"
+          }, {
+            "item" : "312-747-8227",
+            "count" : "1"
+          } ],
+          "smallest" : "312-742-4410",
+          "not_null" : "22",
+          "cardinality" : "22"
+        },
+        "format" : {
+          "displayStyle" : "phone",
+          "align" : "left"
+        }
+      }, {
+        "id" : 258504060,
+        "name" : "FAX",
+        "dataTypeName" : "text",
+        "fieldName" : "fax",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1428248,
+        "width" : 185,
+        "cachedContents" : {
+          "non_null" : 22,
+          "largest" : "312-747-8545",
+          "null" : "1",
+          "top" : [ {
+            "item" : "312-742-5411",
+            "count" : "1"
+          }, {
+            "item" : "312-747-7429",
+            "count" : "1"
+          }, {
+            "item" : "312-744-2422",
+            "count" : "1"
+          }, {
+            "item" : "312-747-5329",
+            "count" : "1"
+          }, {
+            "item" : "312-747-5479",
+            "count" : "1"
+          }, {
+            "item" : "312-744-4481",
+            "count" : "1"
+          }, {
+            "item" : "312-747-5276",
+            "count" : "1"
+          }, {
+            "item" : "312-745-0814",
+            "count" : "1"
+          }, {
+            "item" : "312-747-5396",
+            "count" : "1"
+          }, {
+            "item" : "312-747-6558",
+            "count" : "1"
+          }, {
+            "item" : "312-747-5935",
+            "count" : "1"
+          }, {
+            "item" : "312-747-8545",
+            "count" : "1"
+          }, {
+            "item" : "312-742-5771",
+            "count" : "1"
+          }, {
+            "item" : "312-745-3649",
+            "count" : "1"
+          }, {
+            "item" : "312-746-4248",
+            "count" : "1"
+          }, {
+            "item" : "312-742-8803",
+            "count" : "1"
+          }, {
+            "item" : "312-745-3694",
+            "count" : "1"
+          }, {
+            "item" : "312-742-4421",
+            "count" : "1"
+          }, {
+            "item" : "312-746-4281",
+            "count" : "1"
+          }, {
+            "item" : "312-744-6928",
+            "count" : "1"
+          } ],
+          "smallest" : "312-742-4421",
+          "not_null" : "22",
+          "cardinality" : "22"
+        },
+        "format" : {
+          "displayStyle" : "phone",
+          "align" : "left"
+        }
+      }, {
+        "id" : 258504061,
+        "name" : "TTY",
+        "dataTypeName" : "text",
+        "fieldName" : "tty",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1428249,
+        "width" : 197,
+        "cachedContents" : {
+          "non_null" : 22,
+          "largest" : "312-747-9172",
+          "null" : "1",
+          "top" : [ {
+            "item" : "312-746-8383",
+            "count" : "1"
+          }, {
+            "item" : "312-746-9868",
+            "count" : "1"
+          }, {
+            "item" : "312-747-7471",
+            "count" : "1"
+          }, {
+            "item" : "312-745-3693",
+            "count" : "1"
+          }, {
+            "item" : "312-743-1485",
+            "count" : "1"
+          }, {
+            "item" : "312-745-0569",
+            "count" : "1"
+          }, {
+            "item" : "312-744-8260",
+            "count" : "1"
+          }, {
+            "item" : "312-746-5151",
+            "count" : "1"
+          }, {
+            "item" : "312-747-9170",
+            "count" : "1"
+          }, {
+            "item" : "312-744-8011",
+            "count" : "1"
+          }, {
+            "item" : "312-747-8116",
+            "count" : "1"
+          }, {
+            "item" : "312-742-8841",
+            "count" : "1"
+          }, {
+            "item" : "312-747-6652",
+            "count" : "1"
+          }, {
+            "item" : "312-744-7603",
+            "count" : "1"
+          }, {
+            "item" : "312-747-9169",
+            "count" : "1"
+          }, {
+            "item" : "312-742-5451",
+            "count" : "1"
+          }, {
+            "item" : "312-742-4423",
+            "count" : "1"
+          }, {
+            "item" : "312-747-9168",
+            "count" : "1"
+          }, {
+            "item" : "312-747-9172",
+            "count" : "1"
+          }, {
+            "item" : "312-742-5773",
+            "count" : "1"
+          } ],
+          "smallest" : "312-742-4423",
+          "not_null" : "22",
+          "cardinality" : "22"
+        },
+        "format" : {
+          "displayStyle" : "phone",
+          "align" : "left"
+        }
+      }, {
+        "id" : 258504062,
+        "name" : "X COORDINATE",
+        "dataTypeName" : "number",
+        "fieldName" : "x_coordinate",
+        "position" : 11,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35888756,
+        "width" : 188,
+        "cachedContents" : {
+          "non_null" : 23,
+          "average" : "1164578.667782609",
+          "largest" : "1193131.299",
+          "null" : "0",
+          "top" : [ {
+            "item" : "1138148.815",
+            "count" : "1"
+          }, {
+            "item" : "1138480.758",
+            "count" : "1"
+          }, {
+            "item" : "1138770.871",
+            "count" : "1"
+          }, {
+            "item" : "1148843.91",
+            "count" : "1"
+          }, {
+            "item" : "1154500.753",
+            "count" : "1"
+          }, {
+            "item" : "1154575.242",
+            "count" : "1"
+          }, {
+            "item" : "1155244.069",
+            "count" : "1"
+          }, {
+            "item" : "1157304.426",
+            "count" : "1"
+          }, {
+            "item" : "1158399.146",
+            "count" : "1"
+          }, {
+            "item" : "1164193.588",
+            "count" : "1"
+          }, {
+            "item" : "1165825.476",
+            "count" : "1"
+          }, {
+            "item" : "1167659.235",
+            "count" : "1"
+          }, {
+            "item" : "1168487.845",
+            "count" : "1"
+          }, {
+            "item" : "1169730.744",
+            "count" : "1"
+          }, {
+            "item" : "1171440.24",
+            "count" : "1"
+          }, {
+            "item" : "1172080.029",
+            "count" : "1"
+          }, {
+            "item" : "1172283.013",
+            "count" : "1"
+          }, {
+            "item" : "1175864.837",
+            "count" : "1"
+          }, {
+            "item" : "1176569.052",
+            "count" : "1"
+          }, {
+            "item" : "1177731.401",
+            "count" : "1"
+          } ],
+          "smallest" : "1138148.815",
+          "not_null" : "23",
+          "sum" : "26785309.359",
+          "cardinality" : "23"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "true",
+          "align" : "right"
+        }
+      }, {
+        "id" : 258504063,
+        "name" : "Y COORDINATE",
+        "dataTypeName" : "number",
+        "fieldName" : "y_coordinate",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35888757,
+        "width" : 195,
+        "cachedContents" : {
+          "non_null" : 23,
+          "average" : "1889116.012869565",
+          "largest" : "1943199.401",
+          "null" : "0",
+          "top" : [ {
+            "item" : "1830851.333",
+            "count" : "1"
+          }, {
+            "item" : "1831462.313",
+            "count" : "1"
+          }, {
+            "item" : "1837090.265",
+            "count" : "1"
+          }, {
+            "item" : "1853022.646",
+            "count" : "1"
+          }, {
+            "item" : "1858317.732",
+            "count" : "1"
+          }, {
+            "item" : "1862672.049",
+            "count" : "1"
+          }, {
+            "item" : "1863005.522",
+            "count" : "1"
+          }, {
+            "item" : "1871153.753",
+            "count" : "1"
+          }, {
+            "item" : "1881697.404",
+            "count" : "1"
+          }, {
+            "item" : "1884085.224",
+            "count" : "1"
+          }, {
+            "item" : "1890985.501",
+            "count" : "1"
+          }, {
+            "item" : "1891771.704",
+            "count" : "1"
+          }, {
+            "item" : "1893384.455",
+            "count" : "1"
+          }, {
+            "item" : "1897148.755",
+            "count" : "1"
+          }, {
+            "item" : "1899399.078",
+            "count" : "1"
+          }, {
+            "item" : "1908086.527",
+            "count" : "1"
+          }, {
+            "item" : "1913442.439",
+            "count" : "1"
+          }, {
+            "item" : "1914481.521",
+            "count" : "1"
+          }, {
+            "item" : "1924160.317",
+            "count" : "1"
+          }, {
+            "item" : "1930801.058",
+            "count" : "1"
+          } ],
+          "smallest" : "1830851.333",
+          "not_null" : "23",
+          "sum" : "43449668.296",
+          "cardinality" : "23"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "true",
+          "align" : "right"
+        }
+      }, {
+        "id" : 258504064,
+        "name" : "LATITUDE",
+        "dataTypeName" : "number",
+        "fieldName" : "latitude",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35888725,
+        "width" : 162,
+        "cachedContents" : {
+          "non_null" : 23,
+          "average" : "41.85133477260870",
+          "largest" : "41.99976348",
+          "null" : "0",
+          "top" : [ {
+            "item" : "41.69143478",
+            "count" : "1"
+          }, {
+            "item" : "41.69272336",
+            "count" : "1"
+          }, {
+            "item" : "41.70793329",
+            "count" : "1"
+          }, {
+            "item" : "41.75213684",
+            "count" : "1"
+          }, {
+            "item" : "41.76643089",
+            "count" : "1"
+          }, {
+            "item" : "41.77898719",
+            "count" : "1"
+          }, {
+            "item" : "41.77963154",
+            "count" : "1"
+          }, {
+            "item" : "41.80181109",
+            "count" : "1"
+          }, {
+            "item" : "41.83070169",
+            "count" : "1"
+          }, {
+            "item" : "41.83739443",
+            "count" : "1"
+          }, {
+            "item" : "41.85668453",
+            "count" : "1"
+          }, {
+            "item" : "41.85837259",
+            "count" : "1"
+          }, {
+            "item" : "41.86297662",
+            "count" : "1"
+          }, {
+            "item" : "41.87358229",
+            "count" : "1"
+          }, {
+            "item" : "41.88008346",
+            "count" : "1"
+          }, {
+            "item" : "41.90324165",
+            "count" : "1"
+          }, {
+            "item" : "41.91860889",
+            "count" : "1"
+          }, {
+            "item" : "41.92110332",
+            "count" : "1"
+          }, {
+            "item" : "41.94740046",
+            "count" : "1"
+          }, {
+            "item" : "41.96605342",
+            "count" : "1"
+          } ],
+          "smallest" : "41.69143478",
+          "not_null" : "23",
+          "sum" : "962.58069977",
+          "cardinality" : "23"
+        },
+        "format" : { }
+      }, {
+        "id" : 258504065,
+        "name" : "LONGITUDE",
+        "dataTypeName" : "number",
+        "fieldName" : "longitude",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35888731,
+        "width" : 155,
+        "cachedContents" : {
+          "non_null" : 23,
+          "average" : "-87.67148641521739",
+          "largest" : "-87.56834912",
+          "null" : "0",
+          "top" : [ {
+            "item" : "-87.76819989",
+            "count" : "1"
+          }, {
+            "item" : "-87.76614884",
+            "count" : "1"
+          }, {
+            "item" : "-87.76557448",
+            "count" : "1"
+          }, {
+            "item" : "-87.72811456",
+            "count" : "1"
+          }, {
+            "item" : "-87.70886382",
+            "count" : "1"
+          }, {
+            "item" : "-87.70838196",
+            "count" : "1"
+          }, {
+            "item" : "-87.70548813",
+            "count" : "1"
+          }, {
+            "item" : "-87.69745182",
+            "count" : "1"
+          }, {
+            "item" : "-87.69284451",
+            "count" : "1"
+          }, {
+            "item" : "-87.67132429",
+            "count" : "1"
+          }, {
+            "item" : "-87.66852039",
+            "count" : "1"
+          }, {
+            "item" : "-87.66088702",
+            "count" : "1"
+          }, {
+            "item" : "-87.65697251",
+            "count" : "1"
+          }, {
+            "item" : "-87.65151202",
+            "count" : "1"
+          }, {
+            "item" : "-87.64640771",
+            "count" : "1"
+          }, {
+            "item" : "-87.64422891",
+            "count" : "1"
+          }, {
+            "item" : "-87.64335214",
+            "count" : "1"
+          }, {
+            "item" : "-87.63056018",
+            "count" : "1"
+          }, {
+            "item" : "-87.62735617",
+            "count" : "1"
+          }, {
+            "item" : "-87.62339535",
+            "count" : "1"
+          } ],
+          "smallest" : "-87.76819989",
+          "not_null" : "23",
+          "sum" : "-2016.44418755",
+          "cardinality" : "23"
+        },
+        "format" : { }
+      }, {
+        "id" : 258504066,
+        "name" : "LOCATION",
+        "dataTypeName" : "location",
+        "fieldName" : "location",
+        "position" : 15,
+        "renderTypeName" : "location",
+        "tableColumnId" : 1428203,
+        "width" : 100,
+        "format" : {
+          "view" : "address_coords",
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      }, {
+        "id" : 424038351,
+        "name" : "Boundaries - ZIP Codes",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_rpca_8um6",
+        "position" : 20,
+        "renderTypeName" : "number",
+        "tableColumnId" : 86069770,
+        "computationStrategy" : {
+          "source_columns" : [ "location" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_rpca-8um6",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 424038352,
+        "name" : "Community Areas",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_vrxf_vc4k",
+        "position" : 21,
+        "renderTypeName" : "number",
+        "tableColumnId" : 86069771,
+        "computationStrategy" : {
+          "source_columns" : [ "location" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_vrxf-vc4k",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 424038353,
+        "name" : "Zip Codes",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_6mkv_f3dw",
+        "position" : 22,
+        "renderTypeName" : "number",
+        "tableColumnId" : 86069772,
+        "computationStrategy" : {
+          "source_columns" : [ "location" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_6mkv-f3dw",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 424038354,
+        "name" : "Census Tracts",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_bdys_3d7i",
+        "position" : 23,
+        "renderTypeName" : "number",
+        "tableColumnId" : 86069773,
+        "computationStrategy" : {
+          "source_columns" : [ "location" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_bdys-3d7i",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 424038355,
+        "name" : "Wards",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_43wa_7qmu",
+        "position" : 24,
+        "renderTypeName" : "number",
+        "tableColumnId" : 86069774,
+        "computationStrategy" : {
+          "source_columns" : [ "location" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_43wa-7qmu",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 424038357,
+        "name" : ":@computed_region_awaf_s7ux",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_awaf_s7ux",
+        "position" : 25,
+        "renderTypeName" : "number",
+        "tableColumnId" : 86069776,
+        "computationStrategy" : {
+          "source_columns" : [ "location" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_awaf-s7ux",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "rdfSubject" : "0",
+        "attachments" : [ {
+          "filename" : "police_stations_poly.zip",
+          "blobId" : "DB725B05-F930-4CCC-8AEE-3175DB0B10EA",
+          "name" : "police_stations_poly.zip"
+        } ],
+        "custom_fields" : {
+          "Metadata" : {
+            "Time Period" : "Current as of 2011",
+            "Frequency" : "Data is updated as needed",
+            "Data Owner" : "Police"
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "scy9-9wg4",
+        "displayName" : "cocadmin",
+        "profileImageUrlLarge" : "/api/users/scy9-9wg4/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/scy9-9wg4/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/scy9-9wg4/profile_images/TINY",
+        "screenName" : "cocadmin",
+        "type" : "interactive",
+        "userSegment" : "site_member"
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "scy9-9wg4",
+        "displayName" : "cocadmin",
+        "profileImageUrlLarge" : "/api/users/scy9-9wg4/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/scy9-9wg4/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/scy9-9wg4/profile_images/TINY",
+        "screenName" : "cocadmin",
+        "type" : "interactive",
+        "userSegment" : "site_member"
+      },
+      "tags" : [ "facilities", "gis" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType", "unsaved" ]
+    }
+  },
+  "data" : [ [ "row-f2he~mzx8.vx5u", "00000000-0000-0000-C9F1-7073B9624534", 0, 1566177959, null, 1566177961, null, "{ }", "Headquarters", "Headquarters", "3510 S Michigan Ave", "Chicago", "IL", "60653", [ "http://home.chicagopolice.org", null ], null, null, null, "1177731.401", "1881697.404", "41.83070169", "-87.62339535", [ null, "41.8307016873", "-87.6233953459", null, false ], "36", "1", "4301", "446", "9", "12" ]
+, [ "row-fc5m-k4np-iu3g", "00000000-0000-0000-3D9E-3F1F04F46757", 0, 1566177959, null, 1566177961, null, "{ }", "1", "Central", "1718 S State St", "Chicago", "IL", "60616", [ "http://home.chicagopolice.org/community/districts/1st-district-central/", null ], "312-745-4290", "312-745-3694", "312-745-3693", "1176569.052", "1891771.704", "41.85837259", "-87.62735617", [ null, "41.8583725929", "-87.627356171", null, false ], "40", "34", "21194", "330", "9", "12" ]
+, [ "row-c4dx-yr49~jx6g", "00000000-0000-0000-77EF-50FCB6C954EF", 0, 1566177959, null, 1566177961, null, "{ }", "6", "Gresham", "7808 S Halsted St", "Chicago", "IL", "60620", [ "http://home.chicagopolice.org/community/districts/6th-district-gresham/", null ], "312-745-3617", "312-745-3649", "312-745-3639", "1172283.013", "1853022.646", "41.75213684", "-87.64422891", [ null, "41.7521368378", "-87.6442289066", null, false ], "59", "70", "21554", "487", "31", "17" ]
+, [ "row-s8bd-d3a7_vqtv", "00000000-0000-0000-99BE-94C97929EBFD", 0, 1566177959, null, 1566177961, null, "{ }", "11", "Harrison", "3151 W Harrison St", "Chicago", "IL", "60612", [ "http://home.chicagopolice.org/community/districts/11th-district-harrison/", null ], "312-746-8386", "312-746-4281", "312-746-5151", "1155244.069", "1897148.755", "41.87358229", "-87.70548813", [ null, "41.8735822883", "-87.705488126", null, false ], "28", "28", "21184", "36", "14", "36" ]
+, [ "row-f845_5tgd_x6qx", "00000000-0000-0000-841F-22044B120BCF", 0, 1566177959, null, 1566177961, null, "{ }", "16", "Jefferson Park", "5151 N Milwaukee Ave", "Chicago", "IL", "60630", [ "http://home.chicagopolice.org/community/districts/16th-district-jefferson-park/", null ], "312-742-4480", "312-742-4421", "312-742-4423", "1138480.758", "1933660.473", "41.97409445", "-87.76614884", [ null, "41.9740944511", "-87.7661488432", null, false ], "48", "11", "21869", "780", "50", "20" ]
+, [ "row-yvfb~jk5b-ieea", "00000000-0000-0000-2489-3E2D324FD978", 0, 1566177959, null, 1566177961, null, "{ }", "24", "Rogers Park", "6464 N Clark St", "Chicago", "IL", "60626", [ "http://home.chicagopolice.org/community/districts/24th-district-rogers-park/", null ], "312-744-5907", "312-744-6928", "312-744-7603", "1164193.588", "1943199.401", "41.99976348", "-87.67132429", [ null, "41.9997634842", "-87.6713242922", null, false ], "9", "10", "21853", "242", "24", "46" ]
+, [ "row-w8n8_ep9y-ep35", "00000000-0000-0000-6E40-77CD27DDDC29", 0, 1566177959, null, 1566177961, null, "{ }", "2", "Wentworth", "5101 S Wentworth Ave", "Chicago", "IL", "60609", [ "http://home.chicagopolice.org/community/districts/2nd-district-wentworth/", null ], "312-747-8366", "312-747-5396", "312-747-6656", "1175864.837", "1871153.753", "41.80181109", "-87.63056018", [ null, "41.8018110912", "-87.6305601801", null, false ], "37", "3", "14924", "224", "9", "12" ]
+, [ "row-9w74_aens_ufyr", "00000000-0000-0000-0A4C-786D40974B7B", 0, 1566177959, null, 1566177961, null, "{ }", "7", "Englewood", "1438 W 63rd St", "Chicago", "IL", "60636", [ "http://home.chicagopolice.org/community/districts/7th-district-englewood/", null ], "312-747-8223", "312-747-6558", "312-747-6652", "1167659.235", "1863005.522", "41.77963154", "-87.66088702", [ null, "41.7796315359", "-87.6608870173", null, false ], "23", "65", "22257", "277", "2", "19" ]
+, [ "row-9qcm.w43h.s976", "00000000-0000-0000-9EF9-201041D28987", 0, 1566177959, null, 1566177961, null, "{ }", "25", "Grand Central", "5555 W Grand Ave", "Chicago", "IL", "60639", [ "http://home.chicagopolice.org/community/districts/25th-district-grand-central/", null ], "312-746-8605", "312-746-4353", "312-746-8383", "1138770.871", "1913442.439", "41.91860889", "-87.76557448", [ null, "41.9186088912", "-87.765574479", null, false ], "2", "19", "22615", "307", "45", "52" ]
+, [ "row-z8dj~u6tc~tqtr", "00000000-0000-0000-916C-B00F2A5B9966", 0, 1566177959, null, 1566177961, null, "{ }", "10", "Ogden", "3315 W Ogden Ave", "Chicago", "IL", "60623", [ "http://home.chicagopolice.org/community/districts/10th-district-ogden/", null ], "312-747-7511", "312-747-7429", "312-747-7471", "1154500.753", "1890985.501", "41.85668453", "-87.70838196", [ null, "41.8566845327", "-87.708381958", null, false ], "57", "30", "21569", "202", "14", "36" ]
+, [ "row-n3pc_94tf.h23z", "00000000-0000-0000-F33C-44982D39BC30", 0, 1566177959, null, 1566177961, null, "{ }", "15", "Austin", "5701 W Madison St", "Chicago", "IL", "60644", [ "http://home.chicagopolice.org/community/districts/15th-district-austin/", null ], "312-743-1440", "312-743-1366", "312-743-1485", "1138148.815", "1899399.078", "41.88008346", "-87.76819989", [ null, "41.8800834614", "-87.768199889", null, false ], "32", "26", "22216", "67", "7", "52" ]
+, [ "row-pcpr.nzun_7kie", "00000000-0000-0000-847E-B3A54A43B66D", 0, 1566177959, null, 1566177961, null, "{ }", "3", "Grand Crossing", "7040 S Cottage Grove Ave", "Chicago", "IL", "60637", [ "http://home.chicagopolice.org/community/districts/3rd-district-grand-crossing/", null ], "312-747-8201", "312-747-5479", "312-747-9168", "1182739.183", "1858317.732", "41.76643089", "-87.60574786", [ null, "41.7664308925", "-87.6057478606", null, false ], "60", "9", "22260", "348", "32", "31" ]
+, [ "row-a89m.euyp.x5j2", "00000000-0000-0000-89E3-4D0C687152C7", 0, 1566177959, null, 1566177961, null, "{ }", "19", "Town Hall", "850 W Addison St", "Chicago", "IL", "60613", [ "http://home.chicagopolice.org/community/districts/19th-district-town-hall/", null ], "312-744-8320", "312-744-4481", "312-744-8011", "1169730.744", "1924160.317", "41.94740046", "-87.65151202", [ null, "41.9474004564", "-87.651512018", null, false ], "53", "57", "21186", "727", "25", "38" ]
+, [ "row-eav6~xedj~7s7g", "00000000-0000-0000-C7C5-A459571EC315", 0, 1566177959, null, 1566177961, null, "{ }", "14", "Shakespeare", "2150 N California Ave", "Chicago", "IL", "60647", [ "http://home.chicagopolice.org/community/districts/14th-district-shakespeare/", null ], "312-744-8250", "312-744-2422", "312-744-8260", "1157304.426", "1914481.521", "41.92110332", "-87.69745182", [ null, "41.9211033246", "-87.6974518223", null, false ], "1", "23", "22535", "322", "41", "15" ]
+, [ "row-yrnu_iask_6jqc", "00000000-0000-0000-35ED-75AEBF3976A3", 0, 1566177959, null, 1566177961, null, "{ }", "8", "Chicago Lawn", "3420 W 63rd St", "Chicago", "IL", "60629", [ "http://home.chicagopolice.org/community/districts/8th-district-chicago-lawn/", null ], "312-747-8730", "312-747-8545", "312-747-8116", "1154575.242", "1862672.049", "41.77898719", "-87.70886382", [ null, "41.778987189", "-87.7088638153", null, false ], "58", "64", "21867", "344", "6", "44" ]
+, [ "row-wr2q_thjk-btbn", "00000000-0000-0000-5231-22D5B50A3B42", 0, 1566177959, null, 1566177961, null, "{ }", "4", "South Chicago", "2255 E 103rd St", "Chicago", "IL", "60617", [ "http://home.chicagopolice.org/community/districts/4th-district-south-chicago/", null ], "312-747-7581", "312-747-5276", "312-747-9169", "1193131.299", "1837090.265", "41.70793329", "-87.56834912", [ null, "41.7079332906", "-87.5683491228", null, false ], "25", "48", "21202", "174", "37", "47" ]
+, [ "row-r5gz-4tnq-mw5y", "00000000-0000-0000-70EC-0705DC8B7454", 0, 1566177959, null, 1566177961, null, "{ }", "20", "Lincoln", "5400 N Lincoln Ave", "Chicago", "IL", "60625", [ "http://home.chicagopolice.org/community/districts/20th-district-lincoln/", null ], "312-742-8714", "312-742-8803", "312-742-8841", "1158399.146", "1935788.826", "41.97954951", "-87.69284451", [ null, "41.9795495131", "-87.6928445094", null, false ], "20", "6", "21849", "29", "24", "46" ]
+, [ "row-c4au-phs3.sbv8", "00000000-0000-0000-08B3-D0DCA4935250", 0, 1566177959, null, 1566177961, null, "{ }", "18", "Near North", "1160 N Larrabee St", "Chicago", "IL", "60610", [ "http://home.chicagopolice.org/community/districts/18th-district-near-north/", null ], "312-742-5870", "312-742-5771", "312-742-5773", "1172080.029", "1908086.527", "41.90324165", "-87.64335214", [ null, "41.9032416531", "-87.6433521393", null, false ], "54", "37", "14926", "108", "46", "41" ]
+, [ "row-3e2s_et4c~xxeq", "00000000-0000-0000-EEDD-AAAA8BC4FA81", 0, 1566177959, null, 1566177961, null, "{ }", "12", "Near West", "1412 S Blue Island Ave\n", "Chicago", "IL", "60608", [ "http://home.chicagopolice.org/community/districts/12th-district-near-west/", null ], "312-746-8396", "312-746-4248", "312-746-9868", "1168487.845", "1893384.455", "41.86297662", "-87.65697251", [ null, "41.8629766244", "-87.6569725149", null, false ], "43", "29", "14920", "96", "26", "48" ]
+, [ "row-2aau.9jhn~eg4f", "00000000-0000-0000-5BF7-BBC4530D74B3", 0, 1566177959, null, 1566177961, null, "{ }", "9", "Deering", "3120 S Halsted St", "Chicago", "IL", "60608", [ "http://home.chicagopolice.org/community/districts/9th-district-deering/", null ], "312-747-8227", "312-747-5329", "312-747-9172", "1171440.24", "1884085.224", "41.83739443", "-87.64640771", [ null, "41.8373944311", "-87.6464077068", null, false ], "43", "58", "14920", "676", "48", "26" ]
+, [ "row-rxbs_hjjn~fr8e", "00000000-0000-0000-5B13-560041F4A188", 0, 1566177959, null, 1566177961, null, "{ }", "22", "Morgan Park", "1900 W Monterey Ave", "Chicago", "IL", "60643", [ "http://home.chicagopolice.org/community/districts/22nd-district-morgan-park/", null ], "312-745-0710", "312-745-0814", "312-745-0569", "1165825.476", "1830851.333", "41.69143478", "-87.66852039", [ null, "41.6914347795", "-87.6685203937", null, false ], "13", "74", "22212", "378", "42", "33" ]
+, [ "row-tfa6~htpf-e529", "00000000-0000-0000-5A98-4C05E4A26695", 0, 1566177959, null, 1566177961, null, "{ }", "5", "Calumet", "727 E 111th St", "Chicago", "IL", "60628", [ "http://home.chicagopolice.org/community/districts/5th-district-calumet/", null ], "312-747-8210", "312-747-5935", "312-747-9170", "1183305.427", "1831462.313", "41.69272336", "-87.60450587", [ null, "41.6927233639", "-87.6045058667", null, false ], "19", "47", "21861", "601", "43", "30" ]
+, [ "row-qqvu.rnf6_wxam", "00000000-0000-0000-4F87-CA43FFA7DEC3", 0, 1566177959, null, 1566177961, null, "{ }", "17", "Albany Park", "4650 N Pulaski Rd", "Chicago", "IL", "60630", [ "http://home.chicagopolice.org/community/districts/17th-district-albany-park/", null ], "312-742-4410", "312-742-5411", "312-742-5451", "1148843.91", "1930801.058", "41.96605342", "-87.72811456", [ null, "41.9660534171", "-87.728114561", null, false ], "48", "14", "21869", "257", "38", "28" ]
+ ]
+}
