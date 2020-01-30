@@ -11,11 +11,15 @@ stations <- read_csv(here("shapefiles/police_stations.csv"))
 
 cpd <- here("shapefiles/Boundaries - Police Districts (current).geojson")
 zips_cook <- here("shapefiles/shp_sf")
+boundary <- here("shapefiles/Historical - ccgisdata - Municipality 2014")
 
 cpd_sf <- st_read(cpd) %>% st_transform("+proj=longlat +datum=WGS84")
 cook_shp <- st_read(zips_cook) %>% st_transform("+proj=longlat +datum=WGS84")
+boundary_sf <- st_read(boundary) %>% st_transform("+proj=longlat +datum=WGS84")
 
 stations_sf <- stations %>% st_as_sf(coords = c("LONGITUDE", "LATITUDE"))
+
+boundary_layer <- boundary_sf %>% st_union()
 
 CookCounty <- leaflet() %>%
   setView(lat = 41.8781, lng = -87.6298, zoom = 10) %>%
@@ -43,10 +47,13 @@ cc_cpd_zip <- CookCounty %>%
             highlightOptions = highlightOptions(color = "red",
                                                 weight = 2,
                                                 bringToFront = TRUE)) %>%
+  addPolylines(data = boundary_layer,
+               color = "black",
+               weight = 2) %>%
   addMarkers(data = stations_sf,
             label = stations_sf$`DISTRICT NAME`,
-            #labelOptions = clickable = stations_sf$WEBSITE,
-            popup = TRUE) %>%
+            popup = c(TRUE, clickable = TRUE, 
+                      labelOptions = stations_sf$WEBSITE)) %>%
   addLegend("topright", 
             pal = cpd_pal, 
             title = "Chicago Police Districts as of 1/29/20",

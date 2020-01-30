@@ -45,26 +45,40 @@ intersection %>%
   arrange(desc(as.numeric(dist_num)))
 
 intersection$dist_num %>% class()
+
 #plotting
-intersection %>%
-  group_by(dist_num) %>%
-  select(dist_num, ZCTA5CE10, geometry) %>%
+intersection_plot <- intersection %>%
+  group_by(dist_num, dist_label) %>%
+  select(dist_num, dist_label, ZCTA5CE10, geometry) %>%
   summarize(count = n()) %>%
   arrange(desc(count)) %>%
   ggplot() +
   geom_sf(aes(fill = count)) +
   viridis::scale_fill_viridis(option = "cividis", discrete = FALSE) +
+  geom_sf_label(aes(label = dist_label)) +
   theme_minimal()
 
+#not sure if useful
+# inverse_intersection %>%
+#   group_by(dist_num) %>%
+#   select(dist_num, ZCTA5CE10, geometry) %>%
+#   summarize(count = n()) %>%
+#   arrange(desc(count)) %>%
+#   ggplot() +
+#   geom_sf(aes(fill = count)) +
+#   viridis::scale_fill_viridis(option = "cividis", discrete = FALSE) +
+#   theme_minimal()
 
-inverse_intersection %>%
-  group_by(dist_num) %>%
-  select(dist_num, ZCTA5CE10, geometry) %>%
-  summarize(count = n()) %>%
-  arrange(desc(count)) %>%
-  ggplot() +
-  geom_sf(aes(fill = count)) +
-  viridis::scale_fill_viridis(option = "cividis", discrete = FALSE) +
-  theme_minimal()
 
-
+#check
+# i <- intersection %>%
+#   group_by(dist_num, dist_label) %>%
+#   select(dist_num, dist_label, ZCTA5CE10) %>%
+#   summarize(count = n())
+# 
+# i_1 <- intersection %>%
+#   group_by(dist_num) %>%
+#   select(dist_num, ZCTA5CE10) %>%
+#   summarize(count = n())
+# 
+# all.equal(i, i_1)

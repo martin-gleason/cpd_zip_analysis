@@ -1,5 +1,5 @@
 ---
-title: "Zipcode and CPD Analysis"
+title: "Zip code and CPD Analysis"
 author: "Martin Gleason, MS"
 date: "1/27/2020"
 output: html_document
@@ -8,20 +8,21 @@ output: html_document
 ## Summary of ask:
 The following questions are guiding this GIS analysis:
 
-* Which Chicago Police Department Districts and Cook County zipcodes intersect? 
-* How many zipcodes are in each particular CPD district? 
-* How does this zipcode interaction impact case assignment by zipcode?
+* Which Chicago Police Department Districts and Cook County zip codes intersect? 
+* How many zip codes are in each particular CPD district? 
+* How does this zip code interaction impact case assignment by zip code?
 
 ## Method
-The first step was to create a map of Cook County zipcodes, and overlay this feature with the [CPD district shapefile.](https://data.cityofchicago.org/Public-Safety/CPD-districts/7hhi-ktqw) This file is part of the [Chicago Data Portal](https://data.cityofchicago.org) and can be used with a variety of GIS products. Zipcode integration was a bit more difficult.
+The first step was to create a map of Cook County zip codes, complete with a boundary of the entire county, and then overlay it with the [CPD district shapefile.](https://data.cityofchicago.org/Public-Safety/CPD-districts/7hhi-ktqw) Setting up the district boundaries was easy, as this file is part of the [Chicago Data Portal](https://data.cityofchicago.org) and can be used with a variety of GIS products. Zip code integration was a bit more difficult.
 
-The first issue seems to be a distinction without a difference: [Zipcodes are not polygons, but linear features.](http://www.georeference.org/doc/zip_codes_are_not_areas.htm) Zipcodes represent postal routes, and may include neighborhoods, buildings, or even US Navy ships. While zipcodes are frequently used in stastical models and maps, these zipcodes are frequently derrived from [Zipcode Tabulation Areas.](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html), which are maintained not by the USPS, but by the US Census Bureau. ZCATS are not 1:1 representation of Zipcodes, and may vary as much as 20% with regard to areas covered. This distinction may impact upto 3 zipcodes, which in turn could impact the assignment of dozens, if not hundreds, of cases.
+The first issue seems to be a distinction without a difference: [Zipcodes are not polygons, but linear features.](http://www.georeference.org/doc/zip_codes_are_not_areas.htm) Zip codes represent postal routes, and may include neighborhoods, a single building, or a United States Naval vessel . While zip codes are frequently used in statistical models and maps, these zip codes are frequently derived from [Zipcode Tabulation Areas.](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html), which are maintained not by the USPS, but by the US Census Bureau. ZCATS are not 1:1 representation of Zip codes, and may vary as much as 20% with regard to areas covered. For cook county, this distinction may impact up to 3 zip codes, which in turn could impact the assignment of dozens, if not hundreds, of cases.
 
-The second issue was more technical: How to get the zipcode shapefiles. Pitney/Bowes sells a GIS solution for $399/year. Their product does not depend on the user knowing GIS data, and is regularly updated. The US Census Buear offers TIGER/Line files as part of their open data project. TIGER/Line files are large, and require additional filtering to get to specific geographic locales. Cook County GIS does have a ZCTAS based layer in ArcGIS; however, at present my access to running analysis is limited. 
+The second issue was more technical: How to get the zip code shape files. Pitney/Bowes sells a GIS solution for $399/year. Their product does not depend on the user knowing GIS data, and is regularly updated. The US Census Bureau offers TIGER/Line files as part of their open data project. TIGER/Line files are large, and require additional filtering to get to specific geographic locales. Cook County GIS does have a ZCTAS based layer in ArcGIS; however, at present my access to running analysis is limited. To generate this report, I pulled the ZCTAS file from the US Census Bureau and used the ```sf``` package to create and analyze geographic data. 
+
+The interactive map below is the sum of this work. Hovering over a Zip code creates a pop up message of the zip code, where as markers are CPD district headquarters. Lastly, CPD districts are also mapped to a specific color.
 
 
-
-### Leaflet Map of Cook County Zipcodes and Chicago Police Districts
+### Leaflet Map of Cook County Zip codes and Chicago Police Districts
 
 ```{r setup, include=FALSE, error = FALSE, warning = FALSE, message = FALSE, echo = FALSE}
 library("tidyverse")
