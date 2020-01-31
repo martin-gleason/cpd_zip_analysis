@@ -19,7 +19,7 @@ The following questions are guiding this GIS analysis:
 ## Method
 The first step was to create a map of Cook County zip codes, complete with a boundary of the entire county, and then overlay it with the [CPD district shapefile.](https://data.cityofchicago.org/Public-Safety/CPD-districts/7hhi-ktqw) Setting up the district boundaries was easy, as this file is part of the [Chicago Data Portal](https://data.cityofchicago.org) and can be used with a variety of GIS products. Zip code integration was a bit more difficult.
 
-The first issue seems to be a distinction without a difference: [Zipcodes are not polygons, but linear features.](http://www.georeference.org/doc/zip_codes_are_not_areas.htm) Zip codes represent postal routes, and may include neighborhoods, a single building, or a United States Naval vessel . While zip codes are frequently used in statistical models and maps, these zip codes are frequently derived from [Zipcode Tabulation Areas.](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html), which are maintained not by the USPS, but by the US Census Bureau. ZCATS are not 1:1 representation of Zip codes, and may vary as much as 20% with regard to areas covered. For cook county, this distinction may impact up to 3 zip codes, which in turn could impact the assignment of dozens, if not hundreds, of cases.
+The first issue seems to be a distinction without a difference: [Zipcodes are not polygons, but linear features.](http://www.georeference.org/doc/zip_codes_are_not_areas.htm) Zip codes represent postal routes, and may include neighborhoods, a single building, or a United States Naval vessel . While zip codes are frequently used in statistical models and maps, these zip codes are frequently derived from [Zipcode Tabulation Areas,](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html) which are maintained not by the USPS, but by the US Census Bureau. ZCATS are not 1:1 representation of Zip codes, and may vary as much as 20% with regard to areas covered. For cook county, this distinction may impact up to 3 zip codes, which in turn could impact the assignment of dozens, if not hundreds, of cases.
 
 The second issue was more technical: How to get the zip code shape files. Pitney/Bowes sells a GIS solution for $399/year. Their product does not depend on the user knowing GIS data, and is regularly updated. The US Census Bureau offers TIGER/Line files as part of their open data project. TIGER/Line files are large, and require additional filtering to get to specific geographic locales. Cook County GIS does have a ZCTAS based layer in ArcGIS; however, at present my access to running analysis is limited. To generate this report, I pulled the ZCTAS file from the US Census Bureau and used the ```sf``` package to create and analyze geographic data. 
 
@@ -32,8 +32,10 @@ The interactive map below is the sum of this work. Hovering over a Zip code crea
 library("tidyverse")
 library("here")
 library(kableExtra)
-
 source(here("scripts/load_shapes.R"))
+source(here("scripts/polygon_comparison.R"))
+
+
 
 ```
 
@@ -41,4 +43,18 @@ source(here("scripts/load_shapes.R"))
 cc_cpd_zip
 ```
 
-## 
+### Intersection Table
+* issue: the line counts as an intersection
+  * Where is the dividing line in that line?
+```{r intersection_table, include=TRUE, echo = FALSE, warning = FALSE, message = FALSE}
+intersection_tibble %>%
+  kable(format = "html", 
+        caption = "Count of Intersections Between City of Chicago Police Districts and Zipcodes") %>%
+  kable_styling(bootstrap_options = c("responsive", "bordered", "striped"),
+                full_width = TRUE)
+
+```
+
+```{r intersection_plot, include=TRUE, fig.caption = "Count of Zipcode Intersections within CPD Districts",  echo = FALSE, warning = FALSE, message = FALSE}
+
+intersection_plot
