@@ -1,0 +1,72 @@
+/* importing the following fonts: Nobile, lato. */
+
+@import url('https://fonts.googleapis.com/css?family=Nobile|Lato|Fira+Code');
+
+
+:root{
+	--blue: #193993;
+  --grey: #9b9292;
+  --black: #0e0705;
+  --green: #769319;
+  --gold: #eebf48;
+}
+
+h1{
+	font-family: 'Lato', sans-serif;
+	color: #193993;
+	font-size: 1.9em;
+	text-align: center;
+	text-decoration: underline;
+		text-rendering: optimizelegibility !important;
+
+}
+
+h2{
+	font-family: 'Lato', sans-serif;
+	color:   #193993;
+	font-size: 1.75em;
+	font-style: italic;
+	text-align: left;
+		text-rendering: optimizelegibility !important;
+
+}
+
+h3{
+font-family: 'Lato', sans-serif;
+	color: #193993; 
+	font-style: italic;
+	text-align: left;
+	font-size: 1.5em;
+		text-rendering: optimizelegibility !important;
+
+}
+
+h4{
+font-family: 'Lato', sans-serif;
+	color: #193993; 
+	text-align: right;
+	font-size: .55em;
+		text-rendering: optimizelegibility !important;
+}
+
+ul,ol,dl,p{
+	font-family: 'Nobile', sans-serif;
+	font-size: 1.5rem;
+	text-align: left;
+	color: var(--blue)";
+}
+
+a{
+	color: var(--green);
+	text-decoration: underline;
+	
+}
+
+.remark-inline-code {
+	font-family: 'Fira Code', monospace;
+}
+
+.highlight{
+	background-color: var(--gold);
+	border-radius: 5px;
+}

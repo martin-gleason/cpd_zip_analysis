@@ -38,11 +38,16 @@ glimpse(intersection)
 inverse_intersection <- cook_shp %>% st_join(cpd_sf, join = st_intersects)
 
 
-intersection %>% 
+intersection_tibble <- intersection %>% 
+  st_drop_geometry() %>%
   select(dist_num, ZCTA5CE10) %>%
-  group_by(dist_num, ZCTA5CE10) %>%
+  group_by(dist_num) %>%
   summarize(count = n()) %>%
-  arrange(desc(as.numeric(dist_num)))
+  arrange(as.numeric(dist_num))
+
+intersection_tibble %>%
+  ggplot(aes(x = dist_num, 
+             y = count)) + geom_bar(stat = "identity")
 
 intersection$dist_num %>% class()
 

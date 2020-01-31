@@ -2,7 +2,11 @@
 title: "Zip code and CPD Analysis"
 author: "Martin Gleason, MS"
 date: "1/27/2020"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    css: ["../libs/css/report.css", "../libs/css/report-fonts.css"]
 ---
 
 ## Summary of ask:

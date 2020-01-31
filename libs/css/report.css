@@ -1,0 +1,62 @@
+/* importing the following fonts: Nobile, lato. */
+
+
+div.my-header {
+	background-color: #F77A00;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffb76b), color-stop(0%,#ffa73d), color-stop(0%,#ffffff), color-stop(10%,#ffffff), color-stop(25%,#F77A00), color-stop(100%,#F77A00));
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 30px;
+	width: 100%;
+	text-align: left;
+}
+
+.image-half{
+	height: 50%;
+	width: 50%;
+}
+
+.image-quarter{
+	height: 25%;
+	width: 25%;
+}
+
+.image-ten{
+	height: 10%;
+	width: 10%;
+	}
+
+.left{
+	text-align:left !important;
+	}
+
+.footnote{
+	color:#193993;
+	font-style: italic;
+	
+}
+
+.v-middle{
+	vertical-align: middle;
+	}
+	
+.img-center{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 65%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+
+}
+
+.img-center-solo{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+
+}
