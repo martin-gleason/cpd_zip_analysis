@@ -1,7 +1,7 @@
 ---
 title: "Zip code and CPD Analysis"
 author: "Martin Gleason, MS"
-date: "1/27/2020"
+date: "1/31/2020"
 output: 
   html_document:
     toc: true
@@ -23,7 +23,7 @@ The first issue seems to be a distinction without a difference: [Zipcodes are no
 
 The second issue was more technical: How to get the zip code shape files. Pitney/Bowes sells a GIS solution for $399/year. Their product does not depend on the user knowing GIS data, and is regularly updated. The US Census Bureau offers TIGER/Line files as part of their open data project. TIGER/Line files are large, and require additional filtering to get to specific geographic locales. Cook County GIS does have a ZCTAS based layer in ArcGIS; however, at present my access to running analysis is limited. To generate this report, I pulled the ZCTAS file from the US Census Bureau and used the ```sf``` package to create and analyze geographic data. 
 
-The interactive map below is the sum of this work. Hovering over a Zip code creates a pop up message of the zip code, where as markers are CPD district headquarters. Lastly, CPD districts are also mapped to a specific color.
+The interactive map below is the sum of this work. Hovering over a Zip code creates a pop up message of the zip code, where as markers are CPD district names and headquarters. Lastly, CPD districts are also mapped to a specific color.
 
 
 ### Leaflet Map of Cook County Zip codes and Chicago Police Districts
@@ -44,17 +44,23 @@ cc_cpd_zip
 ```
 
 ### Intersection Table
-* issue: the line counts as an intersection
-  * Where is the dividing line in that line?
+This table calculates the number of zip codes that intersect with a district. This means if a line of a zip codes intersects with the border of a CPD district -- including overlapping borders -- it is counted as an intersection. A tabular view provides additional insight into the difficulty of assignment by zip code: Any zip code solution will require a Zip code and district dividing line. A family whose home is "on the line" between a zip codes and districts will needs additional logic to solve. 
+
 ```{r intersection_table, include=TRUE, echo = FALSE, warning = FALSE, message = FALSE}
 intersection_tibble %>%
   kable(format = "html", 
-        caption = "Count of Intersections Between City of Chicago Police Districts and Zipcodes") %>%
+        caption = "Count of Intersections Between City of Chicago Police Districts and Zip codes",
+        col.names = c("CPD District Number",
+                      "Number of Zipcode Intersections")) %>%
   kable_styling(bootstrap_options = c("responsive", "bordered", "striped"),
                 full_width = TRUE)
 
 ```
-
+### Intersection Plot
+This visualization breakdown the number of intersections of zip codes in a particular district. 
 ```{r intersection_plot, include=TRUE, fig.caption = "Count of Zipcode Intersections within CPD Districts",  echo = FALSE, warning = FALSE, message = FALSE}
 
 intersection_plot
+```
+
+How this dividing line is maintained in future versions of our instance of Supervisor also needs to be considered: Zip codes and districts will change. Moving the district, zip code, or dividing line becomes more cumbersome and complicated because it is set manual by the developers. A full [GIS Point in Polygon ](http://wiki.gis.com/wiki/index.php/Point_in_polygon) solution, either by MS SQL Server, ArcGIS or Google Maps API provides a more modular solution that will be easier to maintain and alter during the lifetime of the cFive contract.

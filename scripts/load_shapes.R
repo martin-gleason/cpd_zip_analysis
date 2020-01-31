@@ -29,8 +29,15 @@ CookCounty <- leaflet() %>%
 cpd_sf <- cpd_sf %>%
   filter(dist_num != 31)
 
-cpd_pal <- colorFactor("magma", domain = as.numeric(cpd_sf$dist_num))
+cpd_pal <- colorFactor("viridis", domain = as.factor(cpd_sf$dist_num))
 
+stations_drop <- stations_sf %>% st_drop_geometry()
+
+labs <- lapply(seq(nrow(stations_drop)), function(i) {
+  paste0( '<p>', stations_drop[i, "DISTRICT"], '<p></p>', 
+          stations_drop[i, "DISTRICT NAME"], '</p>')
+          })
+  
 cc_cpd_zip <- CookCounty %>%
   addPolygons(data = cpd_sf,
               stroke = TRUE,
@@ -51,10 +58,20 @@ cc_cpd_zip <- CookCounty %>%
                color = "black",
                weight = 2) %>%
   addMarkers(data = stations_sf,
-            label = stations_sf$`DISTRICT NAME`,
-            popup = c(TRUE, clickable = TRUE, 
-                      labelOptions = stations_sf$WEBSITE)) %>%
+            label = lapply(labs, htmltools::HTML),
+            labelOptions = labelOptions(noHide = FALSE, direction = "bottom",
+                                        style = list(
+                                          "color" = "black",
+                                          "font-family" = "san-serif",
+                                          "font-size" = "12px"
+                                        ))) %>%
   addLegend("topright", 
             pal = cpd_pal, 
             title = "Chicago Police Districts as of 1/29/20",
+            opacity = .75,
             values = as.numeric(cpd_sf$dist_num))
+
+
+
+
+

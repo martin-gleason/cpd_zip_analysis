@@ -60,7 +60,8 @@ intersection_plot <- intersection %>%
   ggplot() +
   geom_sf(aes(fill = count)) +
   viridis::scale_fill_viridis(option = "cividis", discrete = FALSE) +
-  geom_sf_label(aes(label = dist_label)) +
+  geom_sf_label(aes(label = dist_label),
+                size = 2.5) +
   theme_minimal()
 
 #not sure if useful
